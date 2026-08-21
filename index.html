@@ -1,1 +1,1966 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Divine IT Infrastructure Private Limited provides professional Data Digitalisation, AI Annotation Services, Manpower Supply and technology-enabled business solutions.">
+
+    <meta name="keywords"
+        content="Divine IT Infrastructure, Data Digitalisation, AI Annotation Services, Manpower Supply, IT Infrastructure, AI Data Services">
+
+    <meta name="author" content="Divine IT Infrastructure Private Limited">
+
+    <title>Divine IT Infrastructure Private Limited | Technology & Workforce Solutions</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =========================================
+           GLOBAL STYLES
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+            display: inline-block;
+            color: #2563eb;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(30px, 4vw, 44px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: auto;
+            color: #667085;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #d0d5dd;
+            color: #172033;
+            background: white;
+        }
+
+        .btn-outline:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* =========================================
+           HEADER
+        ========================================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #eef0f4;
+        }
+
+        .navbar {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 18px;
+            color: #111827;
+        }
+
+        .logo-mark {
+            width: 40px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #475467;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #111827;
+        }
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+            padding: 165px 0 100px;
+            background:
+                radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.12), transparent 30%),
+                radial-gradient(circle at 10% 80%, rgba(124, 58, 237, 0.08), transparent 30%),
+                #f8faff;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #eaf1ff;
+            color: #2563eb;
+            padding: 8px 14px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 5vw, 64px);
+            line-height: 1.08;
+            color: #101828;
+            margin-bottom: 22px;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero-text {
+            font-size: 17px;
+            color: #667085;
+            max-width: 650px;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .dashboard {
+            background: white;
+            border: 1px solid #e4e7ec;
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 25px 60px rgba(16, 24, 40, 0.12);
+        }
+
+        .dashboard-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .dashboard-title {
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .status {
+            color: #12b76a;
+            background: #ecfdf3;
+            padding: 6px 10px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .chart {
+            height: 160px;
+            display: flex;
+            align-items: end;
+            gap: 10px;
+            padding: 15px 0;
+        }
+
+        .bar {
+            flex: 1;
+            border-radius: 7px 7px 2px 2px;
+            background: linear-gradient(to top, #2563eb, #7c3aed);
+        }
+
+        .bar:nth-child(1) { height: 45%; }
+        .bar:nth-child(2) { height: 60%; }
+        .bar:nth-child(3) { height: 50%; }
+        .bar:nth-child(4) { height: 72%; }
+        .bar:nth-child(5) { height: 65%; }
+        .bar:nth-child(6) { height: 90%; }
+        .bar:nth-child(7) { height: 78%; }
+
+        .dashboard-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .mini-card {
+            padding: 16px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+
+        .mini-card strong {
+            display: block;
+            font-size: 22px;
+            margin-bottom: 3px;
+        }
+
+        .mini-card span {
+            color: #667085;
+            font-size: 12px;
+        }
+
+        /* =========================================
+           TRUST BAR
+        ========================================= */
+
+        .trust {
+            padding: 30px 0;
+            border-bottom: 1px solid #eaecf0;
+        }
+
+        .trust-content {
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+            flex-wrap: wrap;
+            color: #667085;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* =========================================
+           ABOUT
+        ========================================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            min-height: 430px;
+            border-radius: 24px;
+            background:
+                linear-gradient(rgba(37, 99, 235, 0.82), rgba(124, 58, 237, 0.82)),
+                url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: end;
+            padding: 30px;
+            color: white;
+        }
+
+        .about-stat {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 20px;
+            border-radius: 16px;
+            width: 100%;
+        }
+
+        .about-stat strong {
+            font-size: 30px;
+            display: block;
+        }
+
+        .about-content h2 {
+            font-size: clamp(30px, 4vw, 44px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #111827;
+        }
+
+        .about-content p {
+            color: #667085;
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .check-list li {
+            margin-bottom: 13px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            color: #344054;
+            font-weight: 500;
+        }
+
+        .check {
+            color: #2563eb;
+            font-weight: 900;
+        }
+
+        /* =========================================
+           SERVICES
+        ========================================= */
+
+        .services {
+            background: #f8fafc;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 32px;
+            border: 1px solid #eaecf0;
+            border-radius: 18px;
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            border-color: #bfd2ff;
+            box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
+        }
+
+        .service-icon {
+            width: 55px;
+            height: 55px;
+            display: grid;
+            place-items: center;
+            background: #eef4ff;
+            color: #2563eb;
+            border-radius: 14px;
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .service-card p {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* =========================================
+           WHY CHOOSE US
+        ========================================= */
+
+        .why {
+            background: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 28px 20px;
+            border-radius: 16px;
+            background: #f8fafc;
+            border: 1px solid #eaecf0;
+        }
+
+        .why-card .number {
+            font-size: 30px;
+            font-weight: 800;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .why-card h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .why-card p {
+            font-size: 13px;
+            color: #667085;
+        }
+
+        /* =========================================
+           INDUSTRIES
+        ========================================= */
+
+        .industries {
+            background: #101828;
+            color: white;
+        }
+
+        .industries .section-title h2 {
+            color: white;
+        }
+
+        .industries .section-title p {
+            color: #98a2b3;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .industry {
+            border: 1px solid #344054;
+            padding: 24px 18px;
+            border-radius: 14px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .industry:hover {
+            background: #1d2939;
+            transform: translateY(-4px);
+        }
+
+        .industry-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .industry h3 {
+            font-size: 15px;
+        }
+
+        /* =========================================
+           CTA
+        ========================================= */
+
+        .cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+        }
+
+        .cta-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .cta h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #dbeafe;
+            max-width: 650px;
+        }
+
+        .cta .btn {
+            background: white;
+            color: #2563eb;
+            white-space: nowrap;
+        }
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        .contact {
+            background: #f8fafc;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 50px;
+        }
+
+        .contact-info h2 {
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .contact-info > p {
+            color: #667085;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .contact-icon {
+            min-width: 45px;
+            height: 45px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            background: #eaf1ff;
+            color: #2563eb;
+            font-size: 20px;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .contact-item span {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            border: 1px solid #eaecf0;
+            box-shadow: 0 15px 40px rgba(16, 24, 40, 0.05);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 7px;
+            color: #344054;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d0d5dd;
+            border-radius: 8px;
+            outline: none;
+            font-family: inherit;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-message {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            background: #ecfdf3;
+            color: #027a48;
+            font-size: 13px;
+        }
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            background: #0b1220;
+            color: white;
+            padding: 60px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 45px;
+        }
+
+        .footer-logo {
+            margin-bottom: 15px;
+        }
+
+        .footer-about {
+            color: #98a2b3;
+            font-size: 14px;
+            max-width: 350px;
+        }
+
+        footer h4 {
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #98a2b3;
+            font-size: 13px;
+            transition: 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid #1d2939;
+            padding-top: 22px;
+            text-align: center;
+            color: #667085;
+            font-size: 12px;
+        }
+
+        /* =========================================
+           WHATSAPP BUTTON
+        ========================================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #25d366;
+            color: white;
+            font-size: 26px;
+            z-index: 999;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* =========================================
+           ANIMATIONS
+        ========================================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: all 0.7s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 950px) {
+
+            .hero-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 135px;
+            }
+
+            .hero-visual {
+                max-width: 600px;
+                margin: auto;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .industry-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cta-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .nav-links {
+                position: absolute;
+                top: 76px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 25px 5%;
+                gap: 20px;
+                display: none;
+                border-bottom: 1px solid #eaecf0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .navbar .nav-cta {
+                display: none;
+            }
+
+            .section {
+                padding: 70px 0;
+            }
+
+            .service-grid,
+            .why-grid,
+            .industry-grid,
+            .footer-grid,
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .about-image {
+                min-height: 320px;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+
+            .trust-content {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header>
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                <div class="logo-mark">DI</div>
+                <span>Divine IT Infrastructure</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why">Why Us</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn btn-primary nav-cta">
+                Get Started
+            </a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <div class="hero-badge">
+                        ● Technology • Data • Workforce
+                    </div>
+
+                    <h1>
+                        Empowering Businesses With
+                        <span>Digital & AI Solutions.</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Divine IT Infrastructure Private Limited delivers
+                        reliable technology-enabled services in Data
+                        Digitalisation, AI Annotation and Manpower Supply —
+                        helping organisations improve efficiency, scalability
+                        and business performance.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">
+                            Explore Our Services →
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Talk to Us
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual reveal">
+
+                    <div class="dashboard">
+
+                        <div class="dashboard-top">
+                            <div class="dashboard-title">
+                                Digital Operations
+                            </div>
+
+                            <div class="status">
+                                ● Active
+                            </div>
+                        </div>
+
+                        <div class="chart">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+
+                        <div class="dashboard-cards">
+
+                            <div class="mini-card">
+                                <strong>Data</strong>
+                                <span>Digitalisation</span>
+                            </div>
+
+                            <div class="mini-card">
+                                <strong>AI</strong>
+                                <span>Annotation</span>
+                            </div>
+
+                            <div class="mini-card">
+                                <strong>People</strong>
+                                <span>Workforce</span>
+                            </div>
+
+                            <div class="mini-card">
+                                <strong>24/7</strong>
+                                <span>Business Support</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRUST -->
+
+        <section class="trust">
+
+            <div class="container trust-content">
+
+                <span>✓ Quality Focused</span>
+                <span>✓ Technology Enabled</span>
+                <span>✓ Scalable Workforce</span>
+                <span>✓ Client Centric</span>
+                <span>✓ Reliable Delivery</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section class="section about" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-image reveal">
+
+                    <div class="about-stat">
+                        <strong>Smart. Reliable. Scalable.</strong>
+                        <span>
+                            Technology and workforce solutions designed
+                            around your business needs.
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content reveal">
+
+                    <div class="section-title" style="text-align:left; margin-bottom:20px;">
+                        <span>About Us</span>
+                    </div>
+
+                    <h2>
+                        Building Better Business Operations Through Technology
+                    </h2>
+
+                    <p>
+                        Divine IT Infrastructure Private Limited is a
+                        technology-enabled business solutions company focused
+                        on helping organisations manage their digital,
+                        operational and workforce requirements.
+                    </p>
+
+                    <p>
+                        We combine technology, skilled resources and
+                        process-driven execution to deliver dependable
+                        solutions that support business growth and operational
+                        efficiency.
+                    </p>
+
+                    <ul class="check-list">
+
+                        <li>
+                            <span class="check">✓</span>
+                            Data Digitalisation & Document Processing
+                        </li>
+
+                        <li>
+                            <span class="check">✓</span>
+                            AI Data Annotation & Labelling Services
+                        </li>
+
+                        <li>
+                            <span class="check">✓</span>
+                            Manpower Supply & Workforce Solutions
+                        </li>
+
+                        <li>
+                            <span class="check">✓</span>
+                            Flexible and Scalable Business Support
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SERVICES
+        ========================================== -->
+
+        <section class="section services" id="services">
+
+            <div class="container">
+
+                <div class="section-title reveal">
+
+                    <span>Our Services</span>
+
+                    <h2>
+                        Solutions Designed For Modern Businesses
+                    </h2>
+
+                    <p>
+                        We provide technology and workforce services that
+                        help organisations improve productivity, manage data
+                        efficiently and scale operations.
+                    </p>
+
+                </div>
+
+
+                <div class="service-grid">
+
+                    <div class="service-card reveal">
+
+                        <div class="service-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Data Digitalisation
+                        </h3>
+
+                        <p>
+                            Convert physical documents and records into
+                            structured digital data with accuracy,
+                            consistency and process-driven quality control.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card reveal">
+
+                        <div class="service-icon">
+                            🤖
+                        </div>
+
+                        <h3>
+                            AI Annotation Services
+                        </h3>
+
+                        <p>
+                            High-quality data annotation and labelling
+                            services supporting AI, machine learning and
+                            computer vision applications.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card reveal">
+
+                        <div class="service-icon">
+                            👥
+                        </div>
+
+                        <h3>
+                            Manpower Supply
+                        </h3>
+
+                        <p>
+                            Flexible workforce solutions to help businesses
+                            access suitable resources for operational and
+                            project-based requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card reveal">
+
+                        <div class="service-icon">
+                            💻
+                        </div>
+
+                        <h3>
+                            IT Support Services
+                        </h3>
+
+                        <p>
+                            Technology-focused operational support designed
+                            to improve digital workflows and business
+                            productivity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card reveal">
+
+                        <div class="service-icon">
+                            📁
+                        </div>
+
+                        <h3>
+                            Document Processing
+                        </h3>
+
+                        <p>
+                            Structured document processing and data entry
+                            services for organisations handling large volumes
+                            of business information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card reveal">
+
+                        <div class="service-icon">
+                            ⚙️
+                        </div>
+
+                        <h3>
+                            Business Process Support
+                        </h3>
+
+                        <p>
+                            Custom operational support solutions designed
+                            around your processes, timelines and business
+                            objectives.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             WHY CHOOSE US
+        ========================================== -->
+
+        <section class="section why" id="why">
+
+            <div class="container">
+
+                <div class="section-title reveal">
+
+                    <span>Why Choose Us</span>
+
+                    <h2>
+                        A Reliable Partner For Your Growth
+                    </h2>
+
+                    <p>
+                        We focus on quality, people, technology and
+                        long-term client relationships.
+                    </p>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card reveal">
+
+                        <div class="number">
+                            01
+                        </div>
+
+                        <h3>Quality Focus</h3>
+
+                        <p>
+                            Structured processes and quality checks help us
+                            maintain reliable service delivery.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card reveal">
+
+                        <div class="number">
+                            02
+                        </div>
+
+                        <h3>Skilled Resources</h3>
+
+                        <p>
+                            We focus on building capable teams aligned with
+                            project and operational requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card reveal">
+
+                        <div class="number">
+                            03
+                        </div>
+
+                        <h3>Scalable Solutions</h3>
+
+                        <p>
+                            Our services can be adapted according to changing
+                            business volumes and requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card reveal">
+
+                        <div class="number">
+                            04
+                        </div>
+
+                        <h3>Client Centric</h3>
+
+                        <p>
+                            We work closely with clients to understand their
+                            objectives and deliver practical solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             INDUSTRIES
+        ========================================== -->
+
+        <section class="section industries" id="industries">
+
+            <div class="container">
+
+                <div class="section-title reveal">
+
+                    <span>Industries We Support</span>
+
+                    <h2>
+                        Supporting Businesses Across Sectors
+                    </h2>
+
+                    <p>
+                        Our flexible services can support organisations
+                        across multiple industries and operational
+                        environments.
+                    </p>
+
+                </div>
+
+
+                <div class="industry-grid">
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">🏢</div>
+                        <h3>Corporate</h3>
+                    </div>
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">🏦</div>
+                        <h3>Banking & Finance</h3>
+                    </div>
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">🏥</div>
+                        <h3>Healthcare</h3>
+                    </div>
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">🎓</div>
+                        <h3>Education</h3>
+                    </div>
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">🛒</div>
+                        <h3>Retail & E-commerce</h3>
+                    </div>
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">🏭</div>
+                        <h3>Manufacturing</h3>
+                    </div>
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">🚚</div>
+                        <h3>Logistics</h3>
+                    </div>
+
+                    <div class="industry reveal">
+                        <div class="industry-icon">💼</div>
+                        <h3>Professional Services</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+
+        <section class="cta">
+
+            <div class="container cta-box">
+
+                <div>
+
+                    <h2>
+                        Have a Project in Mind?
+                    </h2>
+
+                    <p>
+                        Let's discuss how Divine IT Infrastructure can help
+                        you with digitalisation, AI data services or
+                        workforce requirements.
+                    </p>
+
+                </div>
+
+                <a href="#contact" class="btn">
+                    Start a Conversation →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+        <section class="section contact" id="contact">
+
+            <div class="container contact-grid">
+
+                <div class="contact-info reveal">
+
+                    <div class="section-title" style="text-align:left; margin-bottom:20px;">
+                        <span>Contact Us</span>
+                    </div>
+
+                    <h2>
+                        Let's Build Something Better Together.
+                    </h2>
+
+                    <p>
+                        Tell us about your requirement and our team will
+                        get in touch with you.
+                    </p>
+
+
+                    <!-- REPLACE THESE DETAILS -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <strong>Email</strong>
+                            <span>YOUR_EMAIL@example.com</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+                            <strong>Phone</strong>
+                            <span>+91 XXXXXXXXXX</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <strong>Office</strong>
+                            <span>
+                                YOUR BUSINESS ADDRESS, INDIA
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-form reveal">
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="your@email.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="+91 XXXXX XXXXX"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="service">
+                                    Service Required
+                                </label>
+
+                                <select id="service">
+
+                                    <option value="">
+                                        Select a service
+                                    </option>
+
+                                    <option>
+                                        Data Digitalisation
+                                    </option>
+
+                                    <option>
+                                        AI Annotation Services
+                                    </option>
+
+                                    <option>
+                                        Manpower Supply
+                                    </option>
+
+                                    <option>
+                                        IT Support
+                                    </option>
+
+                                    <option>
+                                        Document Processing
+                                    </option>
+
+                                    <option>
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                placeholder="Tell us about your requirement..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                            style="width:100%;"
+                        >
+                            Send Enquiry →
+                        </button>
+
+
+                        <div
+                            class="form-message"
+                            id="formMessage"
+                        >
+                            Thank you! Your enquiry has been recorded.
+                            Please contact us directly by email or WhatsApp
+                            to complete the enquiry.
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <div class="logo footer-logo">
+                        <div class="logo-mark">DI</div>
+                        <span style="color:white;">
+                            Divine IT Infrastructure
+                        </span>
+                    </div>
+
+                    <p class="footer-about">
+                        Technology-enabled business solutions focused on
+                        Data Digitalisation, AI Annotation Services and
+                        Manpower Supply.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Company</h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#why">Why Choose Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Services</h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#services">
+                                Data Digitalisation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                AI Annotation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                Manpower Supply
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services">
+                                Document Processing
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Connect</h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#contact">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Request a Quote
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#home">
+                                Back to Top ↑
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+
+                © <span id="year"></span>
+                Divine IT Infrastructure Private Limited.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         WHATSAPP BUTTON
+         
+         IMPORTANT:
+         Replace 919XXXXXXXXX with your actual
+         WhatsApp number including country code.
+    ========================================== -->
+
+    <a
+        class="whatsapp"
+        href="https://wa.me/919XXXXXXXXX"
+        target="_blank"
+        rel="noopener"
+        aria-label="Chat on WhatsApp"
+    >
+        ☎
+    </a>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+        /* Mobile Menu */
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", function () {
+
+            navLinks.classList.toggle("active");
+
+        });
+
+
+        /* Close mobile menu after clicking */
+
+        document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                navLinks.classList.remove("active");
+
+            });
+
+        });
+
+
+        /* Current Year */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        /* Scroll Reveal */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+        function revealOnScroll() {
+
+            revealElements.forEach(function(element) {
+
+                const windowHeight =
+                    window.innerHeight;
+
+                const elementTop =
+                    element.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight - 80) {
+
+                    element.classList.add("active");
+
+                }
+
+            });
+
+        }
+
+        window.addEventListener(
+            "scroll",
+            revealOnScroll
+        );
+
+        revealOnScroll();
+
+
+        /* Contact Form */
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const formMessage =
+            document.getElementById("formMessage");
+
+        contactForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+                formMessage.style.display = "block";
+
+                contactForm.reset();
+
+                setTimeout(function() {
+
+                    formMessage.style.display = "none";
+
+                }, 7000);
+
+            }
+        );
+
+    </script>
+
+</body>
+</html>
+```
 
