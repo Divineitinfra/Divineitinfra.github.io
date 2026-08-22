@@ -699,6 +699,66 @@
             color: #027a48;
             font-size: 13px;
         }
+/* =========================================
+   LEADERSHIP TEAM
+========================================= */
+
+.leadership {
+    background: #ffffff;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.leader-card {
+    background: #ffffff;
+    border: 1px solid #eaecf0;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+}
+
+.leader-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(16, 24, 40, 0.12);
+}
+
+.leader-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #eef4ff;
+}
+
+.leader-card h3 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.leader-card .designation {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.leader-card p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.7;
+}
 
         /* =========================================
            FOOTER
@@ -931,6 +991,7 @@
                     <li><a href="#why">Why Us</a></li>
                     <li><a href="#industries">Industries</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
                 </ul>
             </nav>
 
@@ -1706,7 +1767,89 @@
 
     </main>
 
+<!-- =========================================
+     LEADERSHIP TEAM
+========================================== -->
 
+<section class="section leadership" id="leadership">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>Leadership</span>
+
+            <h2>
+                Meet Our Leadership Team
+            </h2>
+
+            <p>
+                Experienced leadership driving innovation, growth and
+                excellence at Divine IT Infrastructure.
+            </p>
+
+        </div>
+
+
+        <div class="leadership-grid">
+
+            <!-- CEO -->
+
+            <div class="leader-card reveal">
+
+                <img
+                    src="CEO.jpeg"
+                    alt="CEO - Divine IT Infrastructure"
+                    class="leader-image"
+                >
+
+                <h3>
+                    Ms. Disha Vakotar
+                </h3>
+
+                <div class="designation">
+                    Chief Executive Officer
+                </div>
+
+                <p>
+                    Leading Divine IT Infrastructure with a focus on
+                    technology, business growth, innovation and
+                    long-term client relationships.
+                </p>
+
+            </div>
+
+
+            <!-- DIRECTOR -->
+
+            <div class="leader-card reveal">
+
+                <img
+                    src="Director.png"
+                    alt="Director - Divine IT Infrastructure"
+                    class="leader-image"
+                >
+
+                <h3>
+                    Mr. Nishchalkumar Mahto
+                </h3>
+
+                <div class="designation">
+                    Director
+                </div>
+
+                <p>
+                    Supporting strategic operations, business development
+                    and the company's long-term growth and success.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- =========================================
          FOOTER
     ========================================== -->
